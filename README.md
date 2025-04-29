@@ -9,6 +9,8 @@ LS2 9JT
 
 Arduino firmware for individual sensor modules in an automated flow rack tracking system, leveraging VL53L1X ToF measurements and ESP-NOW communication.
 
+[![License: All Rights Reserved](https://img.shields.io/badge/License-All%20Rights%20Reserved-red.svg)](LICENSE.md) <!-- Optional: You can create a LICENSE.md file -->
+
 ## Table of Contents
 
 - [About](#about)
