@@ -86,6 +86,17 @@ sensormodulecode/
 ├── .h and .cpp files                  # Custom libraries to support main program functionality
 └── README.md                          # This file
 ```
+Given below is a table with the core code components and their functionalities
+
+| File                                     | Purpose                                                                                                                                                                                          |
+|------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `Sensor.ino`                             | Main programme that schedules, coordinates and calls functions in other header files and handles error logic. Contains an editable global variable section for easy deployment.                |
+| `Espnowsetup.h`                          | Manages wireless communication including initialization, peer addition, data transmission, and handling send status via ESP-NOW.                                                               |
+| `VL53L1XHandler.h` / `VL53L1XHandler.cpp`| Initializes and manages the VL53L1X sensor, processes distance measurements with rolling averages and stability thresholds, and computes the number of boxes in the rack. Also auto-calculates box sizes. |
+| `WifiSetup.h`                            | Configures the device as a Wi-Fi station to support ESP-NOW transmissions.                                                                                                                       |
+| `LEDControl.h` / `LEDControl.cpp`        | Provides visual feedback by controlling an RGB LED, indicating success or failure of operations.                                                                                                  |
+
+
 
 ## License
 
